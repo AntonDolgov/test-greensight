@@ -1,0 +1,219 @@
+.page-container {
+	height: auto !important;
+	min-height: 100%;
+  padding: 0 100px;
+  margin: auto;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+}
+
+.wrapper {
+	flex-grow: 1;
+}
+
+/**
+/* стили для хедера
+*/
+.page-header {
+	padding-top: 18px;
+}
+
+/* поле для поиска */
+.search-item__button {
+	width: 23px;
+	border-radius: 5px;
+	position: absolute;
+	right: -33px;
+	top: 1px;
+	bottom: -3px;
+	z-index: 10;
+	border: none;
+	background: #1ec8ed url("../images/loupe.png") center 3px no-repeat;
+}
+
+
+/* поле навигации и лого */
+.topline-container {
+	display: flex;
+	height: 100px;
+}
+
+
+/* лого */
+.logo-container {
+	    padding-top: 18px;
+	    display: inline-block;
+}
+
+.logo-container .logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.logo-container .logo-name {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* навигация */
+.navigation {
+	display: inline-block;
+	height: 66px;
+}
+
+.navigation__item {
+	display: inline-block;
+	margin-right: 35px;
+	padding-right: 40px;
+}
+.navigation__item:first-of-type {padding-left: 40px;}
+.navigation__item:last-of-type {margin-right: 0;}
+
+.navigation__item::after {
+	content: "";
+	display: block;
+	height: 54px;
+	width: 1px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -27px;
+	background: #e7e7e7;
+}
+.navigation__item:last-of-type::after {display: none;}
+
+
+
+/**
+/* стили для основного раздела
+*/
+.main {
+	color: #000;
+	padding-bottom: 102px;
+}
+
+/* основной контент */
+.main-content {
+	text-align:center;
+}
+
+.main-content__description {
+	text-align: left;
+}
+
+.main-content__description::before {
+	content: none;
+  float: right;
+  height: 190px;
+  width: 177px;
+}
+
+.main-content__description::after {
+	content: "";
+	display: block;
+	width: 2px;
+	position: absolute;
+	background: #8b8b8b;
+  z-index: 10;
+}
+
+.main-content__description_first {
+	top: 62px;
+	left: 0;
+	width: 35%;
+}
+.main-content__description_first::after {
+  top: 80px;
+  right: 50px;
+  height: 120px;
+  transform: rotate(135deg);
+}
+
+.main-content__description_2nd {
+	top: 505px;
+	left: 0;
+	width: 24%;
+}
+.main-content__description_2nd::after {
+	top: -105px;	
+  right: -23px;
+  height: 155px;
+  transform: rotate(55deg);
+}
+
+.main-content__description_3rd {
+	top: 505px;
+	right: 0;
+	width: 24%;
+}
+.main-content__description_3rd::after {
+  top: -34px;
+  left: -48px;
+  height: 90px;
+  transform: rotate(-60deg);
+}
+
+.main-content__description_4th {
+	top: 14px;
+	right: 5px;
+	width: 184px;
+	text-align: right;
+}
+.main-content__description_4th::after {
+  top: 42px;
+  left: 10px;
+  height: 80px;
+  transform: rotate(25deg);
+}
+
+.main-content__image {
+	display: inline-block;
+}
+
+
+
+/* контент под картинкой */
+.bottom-content {
+
+}
+
+.bottom-content__description {
+	line-height: 1.5;
+}
+
+
+
+/**
+/* стили для футера
+*/
+.page-footer {
+	border-top: 1px solid #ccc;
+	padding-top: 35px;
+	padding-bottom: 55px;
+}
+
+.bottomline-container {
+	display: flex;
+	height: 18px;
+}
+
+/* навигация в футере */
+.bottom-navigation {
+	display: inline-block;
+}
+
+.bottom-navigation__item {
+	display: inline-block;
+	margin-right: 25px;
+	padding-right: 30px;
+}
+.bottom-navigation__item:first-of-type {padding-left: 30px;}
+.bottom-navigation__item:last-of-type {margin-right: 0;}
+
+/* копирайт */
+.copyright-container {
+	display: inline-block;
+}

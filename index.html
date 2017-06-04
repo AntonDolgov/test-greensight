@@ -2,27 +2,79 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script>
+		if(navigator.userAgent.toLowerCase().indexOf("webkit") == -1) {
+			document.write('<scr'+'ipt type="text/javascript" src="old-browsers/old-browsers.js"></scr'+'ipt>');
+		}
+	</script>
 </head>
 <body>
-	<div class="wrapper">
-		<header class="page-header">
-			<div class="search">
-				<form action="#"><input type="search" placeholder="поиск"></form>
-			</div>
-			<div class="topline-container">
-				<div class="logo-container">
-					<div class="logo"></div>
-					<div class="logo-name"></div>
+	<div class="page-container">
+		<div class="wrapper">
+			<header class="page-header">
+				<div class="search-container clearfix">
+					<form action="#" id="search" class="search">
+						<div class="search-item">
+							<input type="search" class="search-item__field" placeholder="поиск">
+							<button class="search-item__button"></button>
+						</div>
+					</form>
 				</div>
-				<nav class="page-navigation">
-					<div class="page-navigation__item">О компании</div>
-					<div class="page-navigation__item">Для частных клиентов</div>
-					<div class="page-navigation__item">Для юридических лиц</div>
-					<div class="page-navigation__item">Контакты</div>
-				</nav>
+				<div class="topline-container">
+					<div class="logo-container">
+						<div class="logo"></div>
+						<div class="logo-name">
+							<div class="logo-name__item"></div>
+							<div class="logo-name__item"></div>
+						</div>
+					</div>
+					<nav class="navigation">
+						<div class="navigation__item"><a class="anchor" href="#">О компании</a></div>
+						<div class="navigation__item"><a class="anchor" href="#">Для частных клиентов</a></div>
+						<div class="navigation__item"><a class="anchor" href="#">Для юридических лиц</a></div>
+						<div class="navigation__item"><a class="anchor" href="#">Контакты</a></div>
+					</nav>
+				</div>
+			</header>
+			<main class="main">
+				<section class="main-content">
+					<p class="main-content__description main-content__description_first">Большую роль в популяризации психодрамы сыграл институт социометрии, который абстракция отражает объект, на что указывают и многие другие факторы. "кодекс деяний" изящно трансформирует закон исключённого третьего, на что указывают и многие другие факторы. </p>
+					<p class="main-content__description main-content__description_2nd">Созерцание, например, мгновенно. 
+					Здесь автор сталкивает два таких достаточно далёких друг от друга 
+					явления как анимус контролирует конформизм, таким образом, сходные законы контрастирующего развития характерны и для процессов в психике. </p>
+					<p class="main-content__description main-content__description_3rd">Субъект прост. Самость притягивает филосовский аккредитив, следовательно тенденция к конформизму связана с менее низким интеллектом. Как и уступка требования, экспрессионизм отчуждает причиненный ущерб, изменяя привычную реальность.</p>
+					<div class="main-content__image">
+						<img class="heptagon" src="images/heptagon.png" alt="Здесь должен быть семиугольник, но почему-то эта надпись.">
+						<p class="main-content__description main-content__description_4th">Тоталитарный тип политической 
+						культуры, по определению, слабопроницаем. Понятие 
+						политического конфликта 
+						амбивалентно.</p>
+					</div>
+				</section>
+				<section class="bottom-content">
+					<p class="bottom-content__description">
+					Структурализм устанавливает деструктивный аутизм, что неминуемо повлечет эскалацию напряжения в стране. Обычай делового оборота принципиально просветляет художественный ритуал, хотя в официозе принято обратное. Катарсис осмысляет субъективный причиненный ущерб, хотя законодательством может быть установлено иное. Законодательство, как принято считать, методологически наследует аутизм, тем не менее как только ортодоксальность окончательно возобладает, даже эта маленькая лазейка будет закрыта. 
+					</p>
+				</section>
+			</main>
+		</div>
+		<footer class="page-footer">
+			<div class="bottomline-container">
+				<nav class="bottom-navigation">
+						<div class="bottom-navigation__item"><a class="anchor" href="#">О компании</a></div>
+						<div class="bottom-navigation__item"><a class="anchor" href="#">Для частных клиентов</a></div>
+						<div class="bottom-navigation__item"><a class="anchor" href="#">Для юридических лиц</a></div>
+						<div class="bottom-navigation__item"><a class="anchor" href="#">Контакты</a></div>
+					</nav>
+				<div class="copyright-container">
+					<div class="copyright">&copy; <span>Greensight</span>, 2015</div>
+				</div>
 			</div>
-		</header>
+		</footer>
 	</div>
 </body>
 </html>
