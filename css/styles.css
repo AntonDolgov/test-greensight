@@ -68,6 +68,8 @@ body {
 	float: right;
 }
 
+.search-mobile-container {display: none;}
+
 .search-item {
 	height: 21px;
 	width: 250px;
@@ -291,9 +293,9 @@ body {
 }
 
 .main-content__description_4th {
-	top: 14px;
-	right: 5px;
-	width: 184px;
+	top: 62px;
+	right: 130px;
+	width: 27%;
 	text-align: right;
 }
 .main-content__description_4th::before {
@@ -303,9 +305,9 @@ body {
 }
 .main-content__description_4th::after {
   top: 42px;
-  left: 10px;
-  height: 80px;
-  transform: rotate(25deg);
+  left: 35px;
+  height: 100px;
+  transform: rotate(50deg);
 }
 
 .main-content__image {
@@ -322,6 +324,18 @@ body {
 		top: 90px;
     right: 40px;
     height: 85px;
+	}
+	.main-content__description_4th {
+		top: 62px;
+		right: 95px;
+		width: 27%;
+		text-align: right;
+	}
+	.main-content__description_4th::after {
+	  top: 42px;
+	  left: 10px;
+	  height: 80px;
+	  transform: rotate(50deg);
 	}
 	.main-content__description_2nd::after {
     top: -100px;
@@ -344,6 +358,9 @@ body {
     top: 50px;
     right: 13px;
     height: 150px;
+	}
+	.main-content__description_4th {
+		right: 195px;
 	}
 	.main-content__description_2nd::after {
     top: -130px;
@@ -446,6 +463,109 @@ body {
 // стили для смартфонов 
 //
 */
-@media (max-width: 940px) {
+@media only screen and (max-width: 940px) {
 
+	.page-container {
+		padding: 0;
+    max-width: 90%;
+	}
+
+	/* стили для верхнего меню и поиска  (хедер) */
+	.topline-container {
+		height: auto;
+		flex-wrap: wrap;
+	}
+
+	.search-container {display: none;}
+	.search-mobile-container {
+		display: block;
+		flex-grow: 1;
+	}
+
+	.search-item {height: 23px;}
+
+	.logo-container {height: 100px;	}
+
+	.navigation {
+		flex-direction: column;
+    width: 100%;
+    border: none;
+    margin-top: 38px;
+    border-radius: 2px;
+    overflow: hidden;
+	}
+
+	.navigation__item {
+		color: #fff;
+		background: #1ec8ed;
+		height: 46px;
+		border-bottom: 1px solid #fff;
+		padding: 0;
+	}
+	.navigation__item:last-of-type {border: none;}
+	.navigation__item::after {display: none;}
+
+	.navigation__item .anchor {
+		width: 100%; 
+		height: 100%;
+		line-height: 46px;
+	}
+	.navigation__item .anchor:hover {
+		background: #0ca6c7;
+		color: #fff;
+		text-decoration: none;
+	}
+
+
+/* стили для основного контента */
+	.main {
+
+	}
+
+	.main-content__description {
+		background: rgba(255, 255, 255, 0.5);
+	}
+	.main-content__description::before,
+	.main-content__description::after {display: none;}
+
+	.main-content__image {max-width: 100%;}
+	.main-content__image	.heptagon {width: 100%;}
+
+/* стили для футера */
+	.bottom-navigation__item:first-of-type {justify-content: flex-start;}
+	.bottom-navigation__item:not(:first-of-type) {padding: 0 5px;}
+
+	.copyright-container {
+		width: 35%;
+	}
+
+	.copyright-container .copyright{
+		text-align: right;
+	}
+
+
+/* @media940px */
+}
+
+@media (max-width: 745px) {
+
+	/* стили для верхнего меню и поиска  (хедер) */
+	.search-mobile-container,
+	.search-mobile-container .search,
+	.search .search-item {width: 100%;}
+
+	.search-mobile-container {margin-top: 38px;}
+	.navigation {margin-top: 15px;}
+
+	/* стили для футера */	
+	.bottomline-container {height: auto;}
+	.bottom-navigation {flex-direction: column;}
+	.bottom-navigation .bottom-navigation__item {
+		justify-content: flex-start;	
+		padding: 5px 0;
+	}
+	.bottom-navigation .bottom-navigation__item::after {display: none;}
+
+
+/* @media745px */
 }

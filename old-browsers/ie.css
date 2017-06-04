@@ -156,19 +156,6 @@
   transform: rotate(-60deg);
 }
 
-.main-content__description_4th {
-	top: 14px;
-	right: 5px;
-	width: 184px;
-	text-align: right;
-}
-.main-content__description_4th::after {
-  top: 42px;
-  left: 10px;
-  height: 80px;
-  transform: rotate(25deg);
-}
-
 .main-content__image {
 	display: inline-block;
 }
